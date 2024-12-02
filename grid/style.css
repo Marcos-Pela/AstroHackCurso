@@ -1,0 +1,18 @@
+.contenedor{
+    display: grid; /* si cambio por un (flex) y saco el (grid-tempalte-colum) es lo mismo*/
+    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-rows: 300px auto;  esto es para decir el alto de la fila*/
+    gap:10px;
+}
+
+.item{
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    /*width: 200px; si pongo un width no le hace caso al  repeat(4, 1fr)*/
+}
+.itemfix{
+    border-radius: 15px; /* contorno redondeado */
+    background: red; /* fondo */
+    color: white; /* de la letra*/
+}

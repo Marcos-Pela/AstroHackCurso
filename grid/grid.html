@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="item" id="item1">1  Para cambiar propiedades del CSS en JS se debe referenciar en HTML, necesitamos un ID del elemento, voy a JS y hago una referncia al elemento que se llame item4 (let item4 = document.....), Js puede acceder a propiedades de CSS de un elemnto referenciado en JS asi=> ((item4.style.backgroundColor = "red")), ojo es .style y despues usa .camelCAse ! 
+        </div>
+        <div class="item" id="item2">2 Para cambiarle el color cuando hago click se hace con ==>>    IF ELSE    IF item4.style.backgroundColor != "red"; aca dice "IF backgroundColor DIFERENTE(!=) a red   pintalo de red y si ya es red ELSE cambialo por lightblue !
+            </div>
+        <div class="item" id="item3">3 Si quiero hacer un cambio mas grande se usa en JS el CLASSLIST esto es un listado de clases, no es una sola. Para agregar la prop. CLASSLIST.ADD("itemfix")  para sacarle la propiedad al elemento CLASSLIST.REMOVE("itemfix"). Pero como en este caso no funciona se usa TOGGLE item4.classList.toggle("itemfix"); aca dice si no esta ponelo("itemfix")  y si esta sacalo!
+            </div>
+        <div class="item" id="item4">4 Entonces con TOGGLE El ("itemfix") esta en CSS y de ahi lo busca el JS para hacer el cambio en HTML o sea lo modificamos directamente desde JS !
+            <button id="purpura">Purpura</button>
+            </div>
+    </div>
+</body>
+<script src="grid.js"></script>
+</html>

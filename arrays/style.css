@@ -1,0 +1,24 @@
+.productos{
+display: flex;
+gap: 80px;
+
+}
+
+.producto{
+transition: all 0.3s ease-out; /* genera un efecto al pasar el mouse, y el tiempo q dura ese efecto 0.3s (ease ver abajo)*/
+width: 130px;     /* medidas que puso Jony 100px*/              
+border-radius: 15px;           /* para que las puntas esten redondeadas*/
+border: solid 1px black;    /* color de borde de la caja*/
+padding: 15px;
+}
+
+.producto:hover {
+    width: 150px;   /* medida que puso Jony 120px*/
+    background-color: cornflowerblue;
+    border-radius: 30px;            /* cuando hace el hover cambia más, se hacen más redondeadas*/
+}
+
+/*                  ease => en este caso tiene all porque es para todos las cajas de producto*/
+/* ease-in La animacion comienza lentamente y luego acelera*/
+/* ease-out La animacion comienza rapidamemte y luego desacelera*/
+/* ease-in-out La animacion comienza lentamente, acelera en el centro y termina lentamente*/

@@ -1,0 +1,129 @@
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.titulos {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{      /* en @media este header cambia una propiedad, es pisado por el de @media*/
+    width: 1020px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 90px 10px 90px;
+    align-items: center;
+
+}
+section{        /* en @media este section es pisado por el de @media*/
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+}
+.videoContainer{
+    width: 50%;
+    height:670px;
+}
+.datos{
+    width: 50%;
+    height: 670px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.videoHome{
+    width: 104%;
+}
+.logo{
+    width: 26px;
+}
+.menu{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boton{
+    border-radius: 9px;
+    background: red;
+    color: white;
+    padding: 11px;
+}
+footer{
+    text-align: center;
+}
+.cta{
+    width: 90px;
+    margin-top: 20px;
+}                     /*--------Media Query*--------*/
+
+/* -------------PAGINA PARA CONSULTAR LOS MEDIA QUERY-----CSS-TIRCKS.COM--------- */
+
+.on{
+    display: none; /* por fuera del @media, asi la img q esta en @media no se ve afuera */
+}
+.off{
+    display: block; /* por fuera del @media */
+}
+@media (max-width: 600px){       /* styles for small screens */
+    section{              /* ahora cuando la pantalla mida hasta 600px */ 
+        flex-direction: column-reverse; /* pisa la de arriba y ver anotaciones*/
+    }
+    .videoContainer, .datos{ /* ver anotaciones instrucion trabaja en dos clases  */
+        height: auto;
+        width: 100%;
+    }
+
+    .on{   /* en version movil cambia cosas, antes en html(img con class on)---ver anotaciones*/
+        display: block;
+    }
+    
+    .off{  /* en version movil como desaparecer cosas---ver anotaciones*/
+        display: none;
+}
+
+header{              /* -----podemos modificar varias cosas-----*/
+    background: red; /* cambia de color solo en movil*/
+} 
+}
+
+/*-------------------SIGUE EN CAJITAS.HTML Y CAJITAS.CSS------------------------*/
+
+/* -----------------------[Media Query Anotaciones]-----------------------------*/
+ /* -------------PAGINA PARA CONSULTAR LOS MEDIA QUERY-----CSS-TIRCKS.COM--------- */
+
+/* -------------------IMPORTANTE----------------*/
+/* LOS @MEDIA ESCRIBRLOS ABAJO DE TODO EN EL CSS, SI LA REGLA SE CUMPLE PISA TODO LO DE ARRIBA */
+
+/* Para hacer que las pantallas se acomoden a los diferentes tamaños usamos el @media para modificar en el css*/
+
+/* section se va a modificar cuando las pantllas midan hasta 600px y tambien se modifica con flex-direction: column-reverse esto hace que se encolumnen los elementos en el html y que se cambie de posicion en este caso la imagen pase arriba y el texto abajo tambien se puede agregar el width:100% (en este caso no hace falta)  */ 
+
+/* .videocontainer, .datos{ para escribir una instruccion que trabeje ne dos clases al mismo tiempo se separan por (,) la instruccion es height:auto */
+
+
+/* ---IMPORTANTE hacer estas dos las clases(.on)(.off)por dentro y por fuera del @media--- */
+
+/* .off (tenemos que agregarle la clase en html en este caso (videoContaineroff) le agregamos el off ) si quiero que algo desaparezca, en la version movil en (.off) ponemos display: none*/
+
+/* .on tenemos que agregar un img con (class:on) en HTML le ponemos la imagen a img en la etiqueta  img src=".gatito.img" en este caso, para que en  movil se vea una imagen diferente a otra version  ponemos (.on diplay: block;) este (on) lo "prende" en movil o en la version que lo escribamos 
+
+/*-------------------SIGUE EN CAJITAS.HTML Y CAJITAS.CSS------------------------*/

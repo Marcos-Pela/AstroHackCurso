@@ -1,0 +1,41 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+.on{                    /* IMPORTANTE hacer estas dos las clases(.on)(.off)por dentro y por fuera */
+    display: none;     
+}                       /* por dentro del @media van invertidas */
+.off{
+    display: block;
+}
+/* ------------@media escribirlos siempre abajo de todo en el css------------*/
+
+/* --------PAGINA PARA CONSULTAR LOS MEDIA QUERI------CSS-TRICKS.COM ------*/
+
+@media (max-width: 600px) {  /* para que se acomode a pantallas mas chicas*/
+.contenedor{
+    flex-direction: column;  /* para q se ubuquen una abajo de otra*/
+    gap: 15px;               /* para q se separen un poco*/
+}
+.caja{
+    width: 100%;          /* para que ocupe todo el ancho*/
+}
+.on{                     /* Acá estan al reves de como estan por fuera del @media*/
+    display: block;      /* significa (on) en movil */ 
+}
+.off{             
+    display: none;      /* significa (off) en movil*/
+}
+}/*---------------------Anotaciones----------------*/
+
+/* Portrait es para la tablet parada (horizontal) */
+/* Landscape es para  la tablet acostada (vertical) */
+/* Wearables es para smartwatch (relojes) */

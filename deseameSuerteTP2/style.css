@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  height: 100vh;
+  /*background-color:rgb(131, 102, 213); /* Ajusta el color de fondo según la imagen */
+  }
+  
+header{
+  background-color:rgb(131, 101, 213);
+  padding: 20px;
+  text-align: center;
+  
+}
+  h1 {
+    color:rgb(3, 101, 3);
+    font-family:cursive;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed; /* cursor:not-allowed; Prohibido(mano con línea diagonal)*/
+  }
+.conteiner{
+  background-color:rgb(131, 101, 213);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+  img {
+    border-radius: 15px;
+    width: 301px; /* Ajusta el ancho según la imagen */
+    margin-bottom: 20px;
+  }
+  
+  input {
+    background-color: rgb(14, 87, 142);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: cursive;
+  }
+
+  button {
+    background-color: rgb(10, 87, 142);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: cursive;
+    color:wheat;
+    cursor: pointer; /* cursor:pointer; Mano(indica que el elemento es clickable)*/
+  }
+
+  button:hover {
+    background-color: #74d2b6; /* button:hover { cambia de color al pasar el cursor */
+  }

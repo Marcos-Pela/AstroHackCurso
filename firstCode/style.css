@@ -1,0 +1,42 @@
+body{
+  margin: 0px;
+}  
+ .colorete{
+    color: #37afe1;
+ }
+ footer{
+    background-color: #535252;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .contenedor{
+    padding: 15px;
+ }
+ .foto{
+    border-radius: 15px;
+    width: 120px;
+    border: black solid 4px;
+ }
+ .redonda {
+    border-radius: 60%;
+    width: 130px;
+    border: solid 1px rgb(151, 150, 150);
+ }
+ .item{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ .nombre{
+    background: black;
+    color: white;
+    font-size: 13px;
+    width: 130px;
+    text-align: center;
+    padding: 12px;
+    margin: -30px;
+ }
